@@ -38,7 +38,7 @@ export class IdentificarComponent implements OnInit {
 
     this.context = this.myCanvas.nativeElement.getContext('2d');
 
-    var video = await navigator.mediaDevices.getUserMedia({video:true});
+    var video = await navigator.mediaDevices.getUserMedia({video:true}); //obtenemos el video
 
 
     await faceapi.nets.tinyFaceDetector.loadFromUri('/assets/models');
